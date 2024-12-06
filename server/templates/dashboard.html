@@ -1,0 +1,166 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="../static/dashboard.css">
+{% endblock css %}
+{% block body %}
+<div class="box">
+    {% include "navbar.html" %}
+    <div class="box_right" id="box_rightid">
+        <div class="right_top" id="right_topid">
+            <div class="top_1" id="top_1id">
+                <div class="people">
+                    <h2>Total People Detected</h2>
+                </div>
+                <div class="people_number">
+                    <h1>{{total_people}}</h1>
+                </div>
+            </div>
+            
+            <div class="top_2" id="top_2id">
+                <div class="male">
+                    <h2>Total Male Detected</h2>
+                </div>
+                <div class="male_number">
+                    <h1>{{male_count}}</h1>
+                </div>
+            </div>
+            <div class="top_3" id="top_3id">
+                <div class="female">
+                    <h2>Total Female Detected</h2>
+                </div>
+                <div class="female_number">
+                    <h1>{{female_count}}</h1>
+                </div>
+            </div>
+        </div>
+        <div class="right_middle" id="right_middleid">
+            <div class="middle_1" id="middle_1id">
+                <iframe
+                    width="100%"
+                    height="100%"
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=73.126837%2C18.988549%2C73.129837%2C18.991549&layer=mapnik&marker=18.990049%2C73.128337"
+                    style="border-radius: 10px;">
+                </iframe>
+                <br/>
+                <small>
+                    <a href="https://www.openstreetmap.org/?mlat=19.0760&amp;mlon=72.8777#map=15/19.0760/72.8777">
+                        View Larger Map
+                    </a>
+                </small>
+            </div>
+           <div class="middle_2" id="middle_2id">
+                <!-- Chart.js Canvas -->
+                <canvas id="myChart" width="400" height="100"></canvas>
+            </div>
+        </div>
+        <div class="right_bottom" id="right_bottomid">
+            <div class="warnings">
+                <h2>Warnings</h2>
+            </div>
+
+            <div id="content"></div>
+            <hr>
+            <div class="p1">
+                
+                
+            </div>
+              <div class="p2" style="color:red;">
+                <h3>SOS Alert sent from Priya, Location: Rasayni Road, Panvel, Maharashtra, India</h3>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+</div>
+<script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- Include Moment.js -->
+<script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+
+<!-- Include Chart.js Date Adapter for Moment.js -->
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@1.0.0"></script>
+
+<script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+
+<script>
+    fetch('/data')
+        .then(response => response.json())
+        .then(data => {
+            const ctx = document.getElementById('myChart').getContext('2d');
+            const myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: data.timestamps,
+                    datasets: [
+                        {
+                            label: 'Male Count',
+                            data: data.male_count,
+                            borderColor: 'rgba(54, 162, 235, 1)',
+                            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                            fill: true,
+                        },
+                        {
+                            label: 'Female Count',
+                            data: data.female_count,
+                            borderColor: 'rgba(255, 99, 132, 1)',
+                            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                            fill: true,
+                        }
+                    ]
+                },
+                options: {
+                    scales: {
+                        x: {
+                            type: 'time',
+                            time: {
+                                unit: 'minute',
+                                stepSize: 30, // Display data points every 30 minutes
+                                displayFormats: {
+                                    minute: 'HH:mm' // Format the time display as 'Hour:Minute'
+                                }
+                            },
+                            title: {
+                                display: true,
+                                text: 'Time'
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Count'
+                            }
+                        }
+                    },
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        title: {
+                            display: true,
+                            text: 'Time vs Count'
+                        }
+                    }
+                }
+            });
+        });
+        
+
+        var socket = io();
+
+        // Listen for the 'update_content' event from the server
+        socket.on('update_content', function(data) {
+            // Update the content div with the new data
+            document.getElementById('content').textContent = data.data;
+        });
+</script>
+</script>
+
+{% endblock %}

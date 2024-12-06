@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+<h1>Welcome to the Homepage</h1>
+
+{% if user_email %}
+    <p>Hello, {{ user_email }}!</p>
+    <a href="{{ url_for('logout') }}">Logout</a>
+{% else %}
+    <p>You are not logged in.</p>
+    <a href="{{ url_for('login') }}">Login</a>
+    <a href="{{ url_for('signup') }}">Signup</a>
+{% endif %}
+
+{% endblock body %}

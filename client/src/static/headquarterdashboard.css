@@ -1,0 +1,158 @@
+.dashboard-container {
+ 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+
+}
+#selectcat{
+    height: 3vh;
+    width: 6vw;
+    font-size: small;
+}
+.chart-section {
+    display: block;
+    padding: 20px;
+    width: 40vw;
+    max-height: 50vh;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chart-wrapper {
+    margin-top: 20px;
+    display: block;
+    height: 30vh;
+    z-index: 100;
+}
+
+.items-mid{
+    display: flex;
+    justify-content: space-around;
+}
+
+.items-section {
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+  
+    height: 28vh;
+}
+
+.item-card {
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.item-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.form-group {display: flex;
+font-size: 0.8rem;
+justify-content: space-around;
+
+
+align-items: center;}
+
+
+.form-group label {margin-left: 5px;}
+.form-section {
+    padding: 20px;
+    max-width: 60vw;
+    height: 50vh;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+  
+
+}
+
+.form-toggle {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.form-toggle button {
+    padding: 2px 4px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-toggle button:hover {
+    background-color: #0056b3;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    width: 35vw;
+    height: 25vh;
+    background-color:
+}
+
+.form input, .form select {
+    padding: 2px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 20vw;
+    height: 3vh;
+    font-size: 0.6rem;
+    
+}
+
+.form button {
+    padding: 2px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #218838;
+}
+
+.chart-section-top{
+    display: flex;
+    align-items: center;}
+
+
+.po{
+    font-size: 0.8em;
+}
+
+
+.ao{
+    font-size: 0.7em;
+}

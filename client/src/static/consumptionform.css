@@ -1,0 +1,66 @@
+/* ConsumptionLogForm.css */
+
+.consumption-log-form-cl {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fefefe; /* Background color */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.consumption-log-form-cl h2 {
+    text-align: center;
+    color: #5525b0; /* Gradient color */
+}
+
+.consumption-log-form-cl form {
+    display: flex;
+    flex-direction: column;
+}
+
+.consumption-log-form-cl div {
+    margin-bottom: 15px;
+}
+
+.consumption-log-form-cl label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #412d5d; /* Gradient color */
+}
+
+.consumption-log-form-cl select,
+.consumption-log-form-cl input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.consumption-log-form-cl select:focus,
+.consumption-log-form-cl input:focus {
+    border-color: #5525b0; /* Gradient color */
+    outline: none;
+}
+
+.consumption-log-form-cl button {
+    padding: 10px;
+    background-color: #5525b0; /* Gradient color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.consumption-log-form-cl button:hover {
+    background-color: #412d5d; /* Gradient color */
+}
+
+.consumption-log-form-cl p {
+    text-align: center;
+    color: green; /* Message color */
+    margin-top: 15px;
+}

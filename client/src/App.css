@@ -1,0 +1,32 @@
+#root{
+  margin:0px;
+  padding: 0px;
+}
+
+.box_right {
+  /*background-color:rgb(238, 242, 246);*/
+
+  background: #f0f0f0;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.box {
+  display: grid;
+  grid-template-columns: 14vw auto;
+  height: 80vh;
+
+ 
+}
+
+.box_left {
+  background-color: #fefefe;
+  height: 99vh;
+  overflow: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+
+}

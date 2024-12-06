@@ -1,0 +1,46 @@
+.patrolformcontainer{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1vh;
+ align-items: center;
+ height: 80vh;
+ width: 60vw;
+ background-color: rgb(255, 255, 255);
+ margin: auto;
+ margin-top: 5vh;
+ box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+#patrolform{
+    display: flex;
+    flex-direction: column;
+}
+
+.patrolforminputs{
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    font-size: 0.8rem;
+    justify-content: space-between;
+
+}
+
+.control-label{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 3vw;
+}
+
+.patrolforminputs input,select{
+    border-radius: 10px;
+
+}
+
+
+#patrolformbutton{
+    margin-top: 3vh;
+    height: 5vh;
+    width: 10vw;
+}
+
+

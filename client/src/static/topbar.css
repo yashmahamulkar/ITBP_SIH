@@ -1,0 +1,131 @@
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7vh;
+    padding: 0 20px;
+    background-color:#000C40;
+    color: white;
+
+}
+
+.search-bar {
+    margin-left: 55vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 20vw;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    padding: 3px;
+    height: 4vh;
+
+}
+
+.search-input {
+    width: 30vw;
+    padding-left: 15px;
+    padding-right: 40px; /* Add padding to make room for the icon */
+    border: 0px;
+    height: 2vh;
+    background-color: #000C40;
+    color: #fefefe;
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    font-size: 0.8em;
+    color: #ffffff;
+  
+}
+
+.user-photo {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1vw;
+}
+
+.user-photo-img {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    
+}
+
+
+.notification-panel {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 250px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 100000;
+}
+
+.notification-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notification-panel li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.notification-panel li:last-child {
+    border-bottom: none;
+}
+
+
+
+.profile-panel {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 250px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 100000;
+    text-align: center;
+}
+
+.profile-photo-center {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.profile-photo-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.profile-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-panel li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.profile-panel li:last-child {
+    border-bottom: none;
+}

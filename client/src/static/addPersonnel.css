@@ -1,0 +1,108 @@
+/* src/AddPersonnel.css */
+
+h1 {
+    text-align: center;
+  }
+  
+  #form {
+   
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+ 
+  }
+  
+  input, select {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+  }
+  
+input[type="text"]{
+    display: block;
+}
+input {
+    display: block; /* Ensure inputs are block elements */
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+
+.PersonnelContainer{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 85vh;
+    background-color: #fefefe;
+    margin-top: 5vh;
+}
+.upperform{
+    display: flex;
+    
+}
+
+.input-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainpersonnelcontainer{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+form label{
+    display: block;
+}
+
+
+.leftform{
+    width: 30vw;
+    padding-right:5vw ;
+}
+
+.rankimage{
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+}
+
+
+#rankimageinside{
+  height: 40vh;
+  width: 10vw;
+}
+
+
+#selectrank{
+  height: 7vh;
+}
+
+
+.input-group select{
+  height: 5vh;
+}
