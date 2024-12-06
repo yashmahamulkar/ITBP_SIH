@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+
+
+.card{
+    width: auto;
+    height: auto;
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card h2{
+  margin-bottom: 10px;
+}
+
+.card a.fp{
+  width: 100%;
+  display: flex;
+  color: #5881D0;
+}
+
+.signup_register{
+  display: flex;
+  width: 100%;
+  border: 1px solid rgba(221, 221, 221, 1);
+  border-radius: 15px;
+  margin: 20px 0;
+}
+
+.signup_register a{
+  font-size: 1em;
+  padding: 10px 55px;
+  border: none;
+  width: 50%;
+}
+
+.signup_register a.login{
+  border-radius: 15px;
+  background:white ;
+  color: black;
+}
+
+.signup_register a.register{
+  border-radius: 15px;
+  background: linear-gradient(90deg,  #5525b0, #412d5d);
+  color: white;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form input,.gender {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #DDDDDD;
+  color: #A0A6A3;
+  font-family: "Roboto Mono", sans-serif;
+  box-shadow: 1px 5px 9px rgba(211, 211, 211, .7);
+}
+
+.form input.email{
+  margin-bottom: 15px;
+}
+
+.form input.pass{
+  margin-bottom: 15px;
+}
+
+.form input.comfirm_pass{
+  margin-bottom: 15px;
+}
+
+.form input.age{
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .gender{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+
+.login_btn{
+  font-size: 20px;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  background-color: #003A74;
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: linear-gradient(-90deg, #5525b0, #412d5c);
+  box-shadow: 1px 5px 9px rgba(211, 211, 211, .9);
+}
+
+
+
+@media (max-width: 768px) {
+    .card {
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+    }
+  
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  }

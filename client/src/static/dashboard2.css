@@ -1,0 +1,216 @@
+/* dashboard.css */
+
+
+.right_top {
+    display: flex;
+   
+   flex-direction: row;
+   justify-content: space-around;
+   
+       overflow: hidden;
+   }
+   
+   .top_1, .top_2, .top_3 {
+       background: #58a5f8;
+       background-image: url("../static/images/circle.png");
+       background-size: cover;
+       color: rgb(255, 255, 255);
+       margin-top: 20px;
+       margin-bottom: 20px;
+       border-radius: 10px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       z-index: 2;
+       width: 26vw;
+       height: 15vh;
+       box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+       position: relative;
+     }
+     
+     .card-heading {
+       position: absolute;
+       top: 10px;
+       left: 15px;  
+       font-size: 1.1rem;
+       color: #ffffff;
+       font-weight: bold;
+     }
+     .card-content{
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+      align-items: center;
+       margin-top: 15px;
+       
+     }
+     
+     .card-icon {
+       font-size: 1.4rem;
+       margin-right: 15px;
+     }
+     
+     .card-value {
+       font-size: 1.6rem;
+       font-weight: bold;
+       color: #ffffff;
+     }
+     
+   .top_2{
+       background:#4bd5c5;
+       background-image: url("../static/images/circle.png");
+     
+       background-size: cover;
+   }
+   
+   .top_1{    
+
+       background:#f85873;
+       background-image: url("../static/images/circle.png");
+    background-color: #7b3de7;
+       background-size: cover;
+   }
+   
+   
+   */
+   h1,h2
+   {
+       margin: 2VH;
+       font-size: 1.1em;
+   }
+   .right_middle {
+       display: grid;
+       grid-template-columns: 1fr 3fr;
+       height: 30vh;
+       width: auto;
+   }
+   
+   .middle_1,
+   .middle_2 {
+       background-color: #fefefe;
+       margin: 10px;
+       border-radius: 20px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+   }
+   .middle_1{
+       margin-left: 5px;
+   }
+   
+   .middle_1 img {
+       height: 100%;
+       width: 100%;
+       object-fit: cover;
+       border-radius: 20px;
+   }
+   
+   .middle_2 img {
+       object-fit: cover;
+       border-radius: 20px;
+   }
+   
+   
+   .rightbottom{
+       display:flex;
+       flex-direction: row;
+   
+       justify-content: space-evenly;
+   
+   
+   }
+   
+   .rightbottomleft{
+   
+       height: 70vh;
+       width: 45vw;
+       background-color: #ffffff;
+       border-radius: 15px;
+       padding: 10px;
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       align-items: center;
+       box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+   }
+   
+   .rightbottomright{
+       display: flex;
+       height: 70vh;
+       width: 37vw;
+       flex-direction: column;
+       justify-content: space-between;
+   
+   }
+   
+   .rightbottom_chart{
+       background-color: #fefefe;
+       font-weight: bold;
+       padding: 10px;
+       border-radius: 20px;
+       height: 45%;
+       font-size: 0.7em;
+       display: flex;
+       align-items: center;
+       
+       flex-direction: column;
+       box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+   }
+   
+   .rightbottom_warning{
+       background-color: #7b3de7;
+       background:#f85873;
+       border-radius: 15px;
+       height: 100%;
+       box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+       display: flex;
+       align-items: center;
+       background-image: url("../static/images/circle.png");
+       background-size:cover ;
+       padding:20px;
+       flex-direction: column;
+       
+   }
+   .warnings_top{
+   
+       font-size: 1.5em;
+       color: antiquewhite;
+   
+   }
+   .warning_heading{
+       font-size: 1.3em;
+       font: bold;
+       color: rgb(255, 255, 255);
+       margin-left: 10px;
+       margin-bottom: 20px;
+       
+   }
+   .warningspoints{
+       color: #fefefe;
+       margin-bottom: ;
+     }
+   .warning_content{
+       margin-top: 10px;
+       }
+   
+   .chartheading
+   {
+       font-size: 1.3em;
+       color: blueviolet;
+       font:bold;
+       
+   }
+   
+   
+     
+     
+     
+     .leaflet-container{
+       border-radius: 10px;
+      width: 100%;
+      height: 100%;
+     }
+    

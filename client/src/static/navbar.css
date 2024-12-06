@@ -1,0 +1,82 @@
+/* Ensure the navbar fits within the screen height */
+
+  
+  .image_container {
+    text-align: center;
+  }
+  
+  .navbarlogo {
+    height: 5vh;
+    width: 10vw;
+    margin-bottom: 1.8vh;
+  }
+  
+  .profile-divider {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    
+  }
+  
+.left_bottom {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 8vh); /* Adjusts height to fit within the screen */
+  }
+  
+  .up {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #0f284a;    ;
+    color: white;
+  }
+  
+  .nav_link {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    height: 50px;
+    border: 0;
+    border-radius: 8px;
+    background-color:#0f284a;
+    ;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.334em;
+    font-family: Roboto, sans-serif;
+    padding: 0 10px; /* Adjust padding as needed */
+    text-decoration: none; /* Remove underline from links */
+    color: #ffffff;/* Text color */
+  }
+  
+  .nav_link i {
+    margin-right: 10px; /* Adjust margin as needed */
+  }
+  
+  .nav_link:hover {
+   background-color:  #F0F2F0 ;
+    color: black; /* Hover color */
+  }
+  
+  .nav_link:active {
+    background-color: #F0F2F0 ;
+    color: black;  /* Click color */
+  }
+  
+  /* Pink shade for active state, ensure you apply this class dynamically */
+  .nav_link.active {
+    background: #F0F2F0;
+    color: black; /* Pink shade for active state */
+  }
+  
+  .bottom {
+    display: flex;
+    justify-content: center;
+    background-color:#0f284a;
+    ;
+  }
+  
+  .logout {
+    width: 100%; /* Ensure logout button fits within the screen width */
+  }

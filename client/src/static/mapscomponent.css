@@ -1,0 +1,57 @@
+.Maps-Main{
+
+    height: 80vh;
+    width: 65vw;
+    display: flex;
+    align-items: center;
+}
+
+.Maps-left{
+    width: 65vw;
+    height: 75vh;
+    margin-left: 2.5vw;
+    margin-right: 3vw;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.Maps-right{
+
+    width: 20vw;
+    height: 93vh;
+    background-color:#fefefe;
+}
+
+
+.CombinedMap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    margin-top: 7vh;   margin-left: 3vw;
+ 
+}
+
+
+.map-selector{
+    display: flex;
+    align-items: flex-end;
+    height:3vh ;
+}
+.map-top
+{
+    margin-top: 3vh;
+    width: 60vw;
+
+}
+
+MapContainer{
+    width: 60vw;
+}
+
+
+.mapsMainContainer{
+    display: flex;
+    flex-direction: row;
+}

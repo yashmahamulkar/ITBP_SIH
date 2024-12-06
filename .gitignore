@@ -1,0 +1,16 @@
+# Node.js dependencies
+client/node_modules/
+client/build/
+
+# Python dependencies
+server/venv/
+server/__pycache__/
+
+# Environment files
+client/.env
+server/.env
+
+# Other unwanted files
+*.log
+.DS_Store
+/usr/bin/bash: wq: command not found

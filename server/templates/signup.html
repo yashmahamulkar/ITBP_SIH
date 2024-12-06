@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Signup{% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="../static/signup.css">
+{% endblock css %}
+
+{% block body %}
+
+    <div class="card">
+        <h1>RAYSONic</h1>
+        <br>
+        <h2>Signup</h2>   
+
+        <div class="login_register">
+            <a href="{{ url_for('login') }}" class="login">Login</a>
+            <a href="{{ url_for('signup') }}" class="register">Signup</a>    
+        </div>
+        <form class="form" method="POST" action="{{ url_for('signup') }}">
+            <input type="text" name="username" placeholder="Username" class="username" required>
+            <input type="email" name="email" placeholder="Email Address" class="email" required>
+            <input type="password" name="password" placeholder="Password" class="pass" required>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" class="confirm_pass" required>
+            <input type="text" name="phonenumber" placeholder="Phone Number" class="phonenumber" required>
+        
+            <select name="gender" class="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        
+            <button type="submit" class="login_btn">Signup</button>
+        </form>
+        
+        <a href="#" class="fp">Forgot password?</a>
+       
+    </div>
+
+{% endblock body %}

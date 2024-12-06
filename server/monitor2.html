@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Monitor{% endblock title %}
+
+{% block body %}
+    {% include "navbar.html" %}
+    <div style="background-color: #fefefe; padding: 20px;">
+        <h1>Live Gender Detection</h1>
+        <img id="video" width="640" height="480" />
+    </div>
+{% endblock body %}
+
+<script type="text/javascript">
+    var socket = io();
+
+    socket.on('video_feed', function(data) {
+        document.getElementById('video').src = 'data:image/jpeg;base64,' + data.frame;
+    });
+
+    // Close the socket connection when the user leaves the page
+    window.addEventListener('beforeunload', function() {
+        socket.disconnect();
+    });
+</script>

@@ -1,0 +1,32 @@
+<!-- navbar.html -->
+<div class="box_left" id="box_leftid">
+    <div class="profile" id="profileid">
+        <div class="image" id="imageid">
+            <img src="https://www.herbertsmithfreehills.com/.imaging/mte/hsf-corporate-site-theme/person-profile/dam/feed/contact/laurence-vincent_WEB.jpg0/jcr:content/laurence-vincent_WEB.jpg" alt="image loading">
+        </div>
+        <div class="name" id="nameid">
+            Welcome, {{ username }}
+        </div>
+    </div>
+    <hr class="profile-divider">
+    <div class="left_bottom" id="left_bottomid">
+        <div class="up">
+            <button class="dashboard" onclick="window.location.href='{{ url_for('homepage') }}'">
+                <i class="fas fa-tachometer-alt"></i> Dashboard
+            </button>
+            <button class="monitor" onclick="window.location.href='{{ url_for('video_feed') }}'">
+                <i class="fas fa-tv"></i> Monitor
+            <button class="location">
+                <i class="fas fa-map-marker-alt"></i> Location
+            </button>
+            <button class="fourth_button">
+                <i class="fas fa-cogs"></i> Generative AI
+            </button>
+        </div>
+        <div class="bottom">
+            <button class="logout" onclick="window.location.href='{{ url_for('logout') }}'">
+                <i class="fas fa-sign-out-alt" ></i> Logout
+            </button >
+        </div>
+    </div>
+</div>

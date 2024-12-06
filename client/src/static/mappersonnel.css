@@ -1,0 +1,73 @@
+#mphead{
+    margin-top: 5vh;
+}
+
+
+.tbut{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+
+.mbut{
+    display: flex;
+    flex-direction: row;
+    margin-right:2vw ;
+    margin-top: 5vh;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;   
+}   
+
+.mbut button{
+    background-color: #0f274a;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 0.8em;
+}
+
+.mform{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+
+    height:50vh;
+    width:40vw;
+    margin: auto;
+    margin-top: 5vh;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    padding-top: 5vh;
+}
+
+.mphead2{
+    font-size: 1.3rem;
+    margin-top: 2vh;
+    color: #0f274a;
+}
+
+.mfield{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mfield input,select{
+    margin-left:2vw ;
+    padding: 10px;
+    border-radius: 10px;
+    height: 7vh;
+}
+
+.mform button{
+
+    margin-top: 5vh;
+    background-color: #0f274a;
+
+}
+
+.mfield select{
+    height: 7vh;
+}
